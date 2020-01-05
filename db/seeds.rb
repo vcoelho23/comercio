@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+	#populando banco categorias
+	
+	categories = ["Esportes","Animais","Para Sua Casa","Veiculos e Barcos","Imoveis","Moda e Beleza","Música Instrumento" ]
+
+	categories.each do |category|
+		Category.create!(description: category)
+		puts "Cadastrando Categorias #{category}"
+	end
